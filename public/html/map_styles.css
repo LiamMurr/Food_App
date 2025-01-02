@@ -1,4 +1,4 @@
- :root {
+:root {
   --color1: #f9f5f2; /* Background or sections */
   --color2: #e7f6fd; /* Buttons, headers, hover effects */
   --color3: #ffe5e0; /* Highlights, borders, secondary buttons */
@@ -102,7 +102,7 @@ body {
   border: none;
   outline: none;
   border-radius: 4px;
-  background: #f77062;
+  background: var(--gradient1);
   color: var(--color1);
 }
 
@@ -112,7 +112,7 @@ body {
 }
 
 .navbar__links:hover {
-color: #4837ff;
+  color: #4837ff;
   transition: all 0.3 ease;
 }
 
@@ -399,4 +399,4 @@ color: #4837ff;
     padding: 10px;
     width: 100%;
   }
-} 
+}
