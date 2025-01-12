@@ -1,24 +1,64 @@
-"use strict";
 
-const menu = document.querySelector("#mobile-menu");
-const menuLinks = document.querySelector(".navbar__menu");
+async function loadRestaurants() {
+  try {
 
-menu.addEventListener("click", function () {
-  menu.classList.toggle("is-active");
-  menuLinks.classList.toggle("active");
-});
+    const response = await fetch('/public/js/restaurants.json');
+    const restaurants = await response.json();
+    
 
-// Initialize and add the map
-let map;
-
-async function initMap() {
-  const map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: -34.397, lng: 150.644 }, // Set the desired center of the map
-    zoom: 8, // Set the zoom level
-  });
+    const container = document.querySelector('.restaurants-container');
+    
+    restaurants.forEach(restaurant => {
+      const restaurantCard = document.createElement('div');
+      restaurantCard.classList.add('restaurant-card');
+      
+      restaurantCard.innerHTML = `
+        <img src="${restaurant.image}" alt="${restaurant.name}">
+        <h2>${restaurant.name}</h2>
+        <p><strong>Cuisine:</strong> ${restaurant.cuisine}</p>
+        <div class="allergy-specs">
+          <strong>Allergy Specifications:</strong>
+          <span class="spec">Gluten-Free: ${restaurant.allergySpecifications.glutenFree ? 'Yes' : 'No'}</span>
+          <span class="spec">Nut-Free: ${restaurant.allergySpecifications.nutFree ? 'Yes' : 'No'}</span>
+          <span class="spec">Dairy-Free: ${restaurant.allergySpecifications.dairyFree ? 'Yes' : 'No'}</span>
+          <span class="spec">Egg-Free: ${restaurant.allergySpecifications.eggFree ? 'Yes' : 'No'}</span>
+          <span class="spec">Soy-Free: ${restaurant.allergySpecifications.soyFree ? 'Yes' : 'No'}</span>
+        </div>
+        <p class="address"><strong>Address:</strong> ${restaurant.address}</p>
+      `;
+      
+      // Append the new card to the container
+      container.appendChild(restaurantCard);
+    });
+  } catch (error) {
+    console.error('Error loading the JSON data:', error);
+  }
 }
 
-initMap();
+window.onload = loadRestaurants;
+
+
+
+
+// const menu = document.querySelector("#mobile-menu");
+// const menuLinks = document.querySelector(".navbar__menu");
+
+// menu.addEventListener("click", function () {
+//   menu.classList.toggle("is-active");
+//   menuLinks.classList.toggle("active");
+// });
+
+// // Initialize and add the map
+// let map;
+
+// async function initMap() {
+//   const map = new google.maps.Map(document.getElementById("map"), {
+//     center: { lat: -34.397, lng: 150.644 }, // Set the desired center of the map
+//     zoom: 8, // Set the zoom level
+//   });
+// }
+
+// initMap();
 
 // 'use strict';
 
