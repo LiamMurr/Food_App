@@ -11,7 +11,9 @@
         "soyFree": false
       },
       "address": "123 Plant Lane, Green City",
-      "image": "/public/images/burger.jpg"
+      "image": "/public/images/burger.jpg",
+      "latitude": -27.4698,
+      "longitude": 153.0251
     },
     {
       "id": 2,
@@ -25,7 +27,9 @@
         "soyFree": true
       },
       "address": "456 Ocean Drive, Coastal Town",
-      "image": "/public/images/skewers.jpg"
+      "image": "/public/images/skewers.jpg",
+      "latitude": -27.4700,
+      "longitude": 153.0236
     },
     {
       "id": 3,
@@ -39,7 +43,10 @@
         "soyFree": true
       },
       "address": "789 Veggie St, Metropolis",
-      "image": "/public/images/burger.jpg"
+      "image": "/public/images/burger.jpg",
+      "latitude": -27.4763,
+      "longitude": 153.0294
+  
     },
     {
       "id": 4,
@@ -53,7 +60,9 @@
         "soyFree": false
       },
       "address": "101 Steakhouse Ave, Foodie City",
-      "image": "/public/images/burger.jpg"
+      "image": "/public/images/burger.jpg",
+      "latitude": -27.4631,
+      "longitude": 153.0277
     },
     {
       "id": 5,
@@ -67,7 +76,9 @@
         "soyFree": true
       },
       "address": "222 Curry Blvd, Flavor Town",
-      "image": "/public/images/burger.jpg"
+      "image": "/public/images/burger.jpg",
+      "latitude": -27.4600,
+      "longitude": 153.0212
     },
     {
       "id": 6,
@@ -81,7 +92,9 @@
         "soyFree": true
       },
       "address": "333 Salsa Street, Fiesta City",
-      "image": "/public/images/burger.jpg"
+      "image": "/public/images/burger.jpg",
+      "latitude": -27.4781,
+      "longitude": 153.0329
     },
     {
       "id": 7,
@@ -95,7 +108,9 @@
         "soyFree": false
       },
       "address": "444 Noodle Lane, Chinatown",
-      "image": "/public/images/burger.jpg"
+      "image": "/public/images/burger.jpg",
+      "latitude": -27.4675,
+      "longitude": 153.0227
     },
     {
       "id": 8,
@@ -109,7 +124,9 @@
         "soyFree": true
       },
       "address": "555 Drive-Thru Ave, Burger City",
-      "image": "/public/images/burger.jpg"
+      "image": "/public/images/burger.jpg",
+      "latitude": -27.4758,
+      "longitude": 153.0249
     },
     {
       "id": 9,
@@ -123,7 +140,9 @@
         "soyFree": false
       },
       "address": "666 Sushi Row, Tokyo Town",
-      "image": "/public/images/burger.jpg"
+      "image": "/public/images/burger.jpg",
+      "latitude": -27.4715,
+      "longitude": 153.0297
     },
     {
       "id": 10,
@@ -137,7 +156,9 @@
         "soyFree": true
       },
       "address": "777 Cheese Blvd, Pizza City",
-      "image": "/public/images/burger.jpg"
+      "image": "/public/images/burger.jpg",
+      "latitude": -27.4690,
+      "longitude": 153.0334
     },
     {
       "id": 11,
@@ -151,7 +172,9 @@
         "soyFree": true
       },
       "address": "888 Hummus Way, Flavor City",
-      "image": "/public/images/burger.jpg"
+      "image": "/public/images/burger.jpg",
+      "latitude": -27.4642,
+      "longitude": 153.0300
     },
     {
       "id": 12,
@@ -165,7 +188,9 @@
         "soyFree": false
       },
       "address": "999 Dragon St, Chinatown",
-      "image": "/public/images/burger.jpg"
+      "image": "/public/images/burger.jpg",
+      "latitude": -27.4744,
+      "longitude": 153.0186
     }
   ]
   
