@@ -1,32 +1,59 @@
-
 async function loadRestaurants() {
   try {
-
     const response = await fetch('/public/js/restaurants.json');
     const restaurants = await response.json();
-    
 
     const container = document.querySelector('.restaurants-container');
-    
+
+
     restaurants.forEach(restaurant => {
       const restaurantCard = document.createElement('div');
       restaurantCard.classList.add('restaurant-card');
-      
+
       restaurantCard.innerHTML = `
         <img src="${restaurant.image}" alt="${restaurant.name}">
         <h2>${restaurant.name}</h2>
-        <p>${restaurant.cuisine}</p>
+        <p class="one">${restaurant.cuisine} | ${restaurant.priceRange}</p>
+        <p class="distance">5km away</p>
       `;
-      
-      // Append the new card to the container
+
       container.appendChild(restaurantCard);
     });
   } catch (error) {
-    console.error('Error loading the JSON data:', error);
+    console.error('Error loading the restaurant data:', error);
   }
 }
 
-window.onload = loadRestaurants;
+function setupScrolling() {
+  const prevBtn = document.querySelector('.prev-btn');
+  const nextBtn = document.querySelector('.next-btn');
+  const container = document.querySelector('.restaurants-container');
+
+  let scrollPosition = 0;
+  const cardWidth = 320;
+
+  nextBtn.addEventListener('click', () => {
+    scrollPosition += cardWidth;
+    container.style.transform = `translateX(-${scrollPosition}px)`;
+  });
+
+  prevBtn.addEventListener('click', () => {
+    scrollPosition -= cardWidth;
+    if (scrollPosition < 0) scrollPosition = 0;
+    container.style.transform = `translateX(-${scrollPosition}px)`;
+  });
+}
+
+window.onload = () => {
+  loadRestaurants().then(() => {
+    setupScrolling();
+  });
+};
+
+
+
+
+
 
 
 

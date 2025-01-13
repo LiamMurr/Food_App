@@ -234,33 +234,50 @@ body {
 
 /* Display of restaurants ---------------------------------*/
 
-/* ------------ */
-.restaurants-container {
+/* SLIDER */
+
+/* Slider container */
+.slider {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  column-gap: 40px;
-  row-gap: 24px;
-  padding: 2rem 0;
+  align-items: center;
+  position: relative;
+  overflow: hidden; /* Hide content overflow */
+  width: 95%;
+  margin: auto;
+  height: auto;
 }
 
+/* Container for restaurant cards */
+.restaurants-container {
+  display: flex;
+  flex-wrap: nowrap; /* Single row */
+  gap: 20px; /* Space between cards */
+  transition: transform 0.3s ease-in-out; /* Smooth sliding */
+  padding: 2rem 0;
+  will-change: transform;
+}
+
+/* Individual restaurant card */
 .restaurant-card {
-  width: 30%;
-  transition: transform 0.3s;
-  background-color: var(--color1);
+  flex: 0 0 auto;
+  overflow: hidden;
+  width: 300px; /* Fixed width for each card */
+  transition: transform 0.3s ease-in-out;
 }
 
 .restaurant-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Slight zoom on hover */
 }
 
+/* Card image */
 .restaurant-card img {
   width: 100%;
-  height: 200px;
+  height: 180px;
   object-fit: cover;
   overflow: hidden;
 }
 
+/* Card title */
 .restaurant-card h2 {
   font-size: 1rem;
   font-style: normal;
@@ -269,16 +286,38 @@ body {
   font-family: "Kumbh Sans", serif;
 }
 
-.restaurant-card p {
+/* Card details */
+.restaurant-card .one {
   font-size: 0.8rem;
+  font-family: "Kumbh Sans", serif;
+  color: #6a6a6a;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+}
+
+.restaurant-card .distance {
+  margin-top: 2.5px;
+  font-size: 0.7rem;
   font-family: "Kumbh Sans", serif;
   color: #6a6a6a;
 }
 
+/* Navigation buttons */
+.prev-btn, .next-btn {
+  /* position: absolute; */
+  cursor: pointer;
+  z-index: 1;
+  transform: translateY(-50%);
+
+}
+
+
+
+
 
 /*  Map Section ------------------------------------------------- */
 
-.main__container {
+/* .main__container {
   margin-top: 16px;
   background-color: var(--color1);
   width: 100%;
@@ -324,7 +363,7 @@ display: flex;
 flex-direction: column;
 row-gap: 20px;
 margin: 16px;
-}
+} */
 
 /* Mobile Responsive */
 
