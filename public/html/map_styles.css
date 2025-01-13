@@ -125,6 +125,16 @@ body {
   transition: all 0.3 ease;
 }
 
+.food {
+  background-color: #74b9b7;
+  background-image: linear-gradient(to top, #009688 0%, #80cbc4 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
 @media screen and (max-width: 960px) {
   .navbar__container {
     display: flex;
@@ -229,18 +239,15 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  padding: 20px;
+  column-gap: 40px;
+  row-gap: 24px;
+  padding: 2rem 0;
 }
 
 .restaurant-card {
-  width: 300px;
-  padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
   transition: transform 0.3s;
-  background-color: #fff;
+  background-color: var(--color1);
 }
 
 .restaurant-card:hover {
@@ -251,41 +258,22 @@ body {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-radius: 8px;
+  overflow: hidden;
 }
 
 .restaurant-card h2 {
-  font-size: 1.5rem;
-  color: #333;
-  margin: 10px 0;
+  font-size: 1rem;
+  font-style: normal;
+  color: #000;
+  margin: 5px 0;
+  font-family: "Kumbh Sans", serif;
 }
 
 .restaurant-card p {
-  font-size: 1rem;
-  color: #555;
+  font-size: 0.8rem;
+  font-family: "Kumbh Sans", serif;
+  color: #6a6a6a;
 }
-
-.restaurant-card .allergy-specs {
-  margin-top: 10px;
-  font-size: 0.9rem;
-  color: #888;
-}
-
-.restaurant-card .address {
-  margin-top: 10px;
-  font-size: 0.9rem;
-  color: #666;
-}
-
-.restaurant-card .allergy-specs span {
-  font-weight: bold;
-}
-
-.restaurant-card .allergy-specs .spec {
-  display: block;
-}
-
-
 
 
 /*  Map Section ------------------------------------------------- */

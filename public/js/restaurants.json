@@ -1,196 +1,218 @@
 [
-    {
-      "id": 1,
-      "name": "The Green Fork",
-      "cuisine": "Vegetarian",
-      "allergySpecifications": {
-        "glutenFree": true,
-        "nutFree": true,
-        "dairyFree": true,
-        "eggFree": true,
-        "soyFree": false
-      },
-      "address": "123 Plant Lane, Green City",
-      "image": "/public/images/burger.jpg",
+  {
+    "id": 1,
+    "name": "The Green Fork",
+    "cuisine": "Vegetarian",
+    "allergySpecifications": {
+      "glutenFree": true,
+      "nutFree": true,
+      "dairyFree": true,
+      "eggFree": true,
+      "soyFree": false
+    },
+    "address": "123 Plant Lane, Green City",
+    "image": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?q=80&w=1968&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "coordinates": {
       "latitude": -27.4698,
       "longitude": 153.0251
+    }
+  },
+  {
+    "id": 2,
+    "name": "Seafood Haven",
+    "cuisine": "Seafood",
+    "allergySpecifications": {
+      "glutenFree": false,
+      "nutFree": true,
+      "dairyFree": false,
+      "eggFree": false,
+      "soyFree": true
     },
-    {
-      "id": 2,
-      "name": "Seafood Haven",
-      "cuisine": "Seafood",
-      "allergySpecifications": {
-        "glutenFree": false,
-        "nutFree": true,
-        "dairyFree": false,
-        "eggFree": false,
-        "soyFree": true
-      },
-      "address": "456 Ocean Drive, Coastal Town",
-      "image": "/public/images/skewers.jpg",
-      "latitude": -27.4700,
+    "address": "456 Ocean Drive, Coastal Town",
+    "image": "https://plus.unsplash.com/premium_photo-1707935175109-ba307d98bfe2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "coordinates": {
+      "latitude": -27.47,
       "longitude": 153.0236
+    }
+  },
+  {
+    "id": 3,
+    "name": "Urban Vegan Kitchen",
+    "cuisine": "Vegan",
+    "allergySpecifications": {
+      "glutenFree": true,
+      "nutFree": false,
+      "dairyFree": true,
+      "eggFree": true,
+      "soyFree": true
     },
-    {
-      "id": 3,
-      "name": "Urban Vegan Kitchen",
-      "cuisine": "Vegan",
-      "allergySpecifications": {
-        "glutenFree": true,
-        "nutFree": false,
-        "dairyFree": true,
-        "eggFree": true,
-        "soyFree": true
-      },
-      "address": "789 Veggie St, Metropolis",
-      "image": "/public/images/burger.jpg",
+    "address": "789 Veggie St, Metropolis",
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?q=80&w=1968&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "coordinates": {
       "latitude": -27.4763,
       "longitude": 153.0294
-  
+    }
+  },
+  {
+    "id": 4,
+    "name": "Gourmet Grill",
+    "cuisine": "American",
+    "allergySpecifications": {
+      "glutenFree": true,
+      "nutFree": true,
+      "dairyFree": false,
+      "eggFree": false,
+      "soyFree": false
     },
-    {
-      "id": 4,
-      "name": "Gourmet Grill",
-      "cuisine": "American",
-      "allergySpecifications": {
-        "glutenFree": true,
-        "nutFree": true,
-        "dairyFree": false,
-        "eggFree": false,
-        "soyFree": false
-      },
-      "address": "101 Steakhouse Ave, Foodie City",
-      "image": "/public/images/burger.jpg",
+    "address": "101 Steakhouse Ave, Foodie City",
+    "image": "https://images.unsplash.com/photo-1683315446874-e6a629087ef8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "coordinates": {
       "latitude": -27.4631,
       "longitude": 153.0277
+    }
+  },
+  {
+    "id": 5,
+    "name": "Spice Paradise",
+    "cuisine": "Indian",
+    "allergySpecifications": {
+      "glutenFree": true,
+      "nutFree": false,
+      "dairyFree": false,
+      "eggFree": true,
+      "soyFree": true
     },
-    {
-      "id": 5,
-      "name": "Spice Paradise",
-      "cuisine": "Indian",
-      "allergySpecifications": {
-        "glutenFree": true,
-        "nutFree": false,
-        "dairyFree": false,
-        "eggFree": true,
-        "soyFree": true
-      },
-      "address": "222 Curry Blvd, Flavor Town",
-      "image": "/public/images/burger.jpg",
-      "latitude": -27.4600,
+    "address": "222 Curry Blvd, Flavor Town",
+    "image": "https://images.unsplash.com/photo-1625242661157-e9e5708ffe5e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "coordinates": {
+      "latitude": -27.46,
       "longitude": 153.0212
+    }
+  },
+  {
+    "id": 6,
+    "name": "Taco Fiesta",
+    "cuisine": "Mexican",
+    "allergySpecifications": {
+      "glutenFree": false,
+      "nutFree": true,
+      "dairyFree": false,
+      "eggFree": true,
+      "soyFree": true
     },
-    {
-      "id": 6,
-      "name": "Taco Fiesta",
-      "cuisine": "Mexican",
-      "allergySpecifications": {
-        "glutenFree": false,
-        "nutFree": true,
-        "dairyFree": false,
-        "eggFree": true,
-        "soyFree": true
-      },
-      "address": "333 Salsa Street, Fiesta City",
-      "image": "/public/images/burger.jpg",
+    "address": "333 Salsa Street, Fiesta City",
+    "image": "https://images.unsplash.com/photo-1536184071535-78906f7172c2?q=80&w=2151&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "coordinates": {
       "latitude": -27.4781,
       "longitude": 153.0329
+    }
+  },
+  {
+    "id": 7,
+    "name": "Wok & Roll",
+    "cuisine": "Asian",
+    "allergySpecifications": {
+      "glutenFree": true,
+      "nutFree": false,
+      "dairyFree": true,
+      "eggFree": false,
+      "soyFree": false
     },
-    {
-      "id": 7,
-      "name": "Wok & Roll",
-      "cuisine": "Asian",
-      "allergySpecifications": {
-        "glutenFree": true,
-        "nutFree": false,
-        "dairyFree": true,
-        "eggFree": false,
-        "soyFree": false
-      },
-      "address": "444 Noodle Lane, Chinatown",
-      "image": "/public/images/burger.jpg",
+    "address": "444 Noodle Lane, Chinatown",
+    "image": "https://images.unsplash.com/photo-1591814468924-caf88d1232e1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "coordinates": {
       "latitude": -27.4675,
       "longitude": 153.0227
+    }
+  },
+  {
+    "id": 8,
+    "name": "Burger Barn",
+    "cuisine": "Fast Food",
+    "allergySpecifications": {
+      "glutenFree": false,
+      "nutFree": true,
+      "dairyFree": false,
+      "eggFree": false,
+      "soyFree": true
     },
-    {
-      "id": 8,
-      "name": "Burger Barn",
-      "cuisine": "Fast Food",
-      "allergySpecifications": {
-        "glutenFree": false,
-        "nutFree": true,
-        "dairyFree": false,
-        "eggFree": false,
-        "soyFree": true
-      },
-      "address": "555 Drive-Thru Ave, Burger City",
-      "image": "/public/images/burger.jpg",
+    "address": "555 Drive-Thru Ave, Burger City",
+    "image": "https://images.unsplash.com/photo-1428660386617-8d277e7deaf2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "coordinates": {
       "latitude": -27.4758,
       "longitude": 153.0249
+    }
+  },
+  {
+    "id": 9,
+    "name": "Sushi Zen",
+    "cuisine": "Japanese",
+    "allergySpecifications": {
+      "glutenFree": true,
+      "nutFree": true,
+      "dairyFree": true,
+      "eggFree": true,
+      "soyFree": false
     },
-    {
-      "id": 9,
-      "name": "Sushi Zen",
-      "cuisine": "Japanese",
-      "allergySpecifications": {
-        "glutenFree": true,
-        "nutFree": true,
-        "dairyFree": true,
-        "eggFree": true,
-        "soyFree": false
-      },
-      "address": "666 Sushi Row, Tokyo Town",
-      "image": "/public/images/burger.jpg",
+    "address": "666 Sushi Row, Tokyo Town",
+    "image": "https://plus.unsplash.com/premium_photo-1668146927669-f2edf6e86f6f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "coordinates": {
       "latitude": -27.4715,
       "longitude": 153.0297
+    }
+  },
+  {
+    "id": 10,
+    "name": "Pizza Fiesta",
+    "cuisine": "Italian",
+    "allergySpecifications": {
+      "glutenFree": false,
+      "nutFree": true,
+      "dairyFree": false,
+      "eggFree": true,
+      "soyFree": true
     },
-    {
-      "id": 10,
-      "name": "Pizza Fiesta",
-      "cuisine": "Italian",
-      "allergySpecifications": {
-        "glutenFree": false,
-        "nutFree": true,
-        "dairyFree": false,
-        "eggFree": true,
-        "soyFree": true
-      },
-      "address": "777 Cheese Blvd, Pizza City",
-      "image": "/public/images/burger.jpg",
-      "latitude": -27.4690,
+    "address": "777 Cheese Blvd, Pizza City",
+    "image": "https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "coordinates": {
+      "latitude": -27.469,
       "longitude": 153.0334
+    }
+  },
+  {
+    "id": 11,
+    "name": "Falafel House",
+    "cuisine": "Middle Eastern",
+    "allergySpecifications": {
+      "glutenFree": true,
+      "nutFree": false,
+      "dairyFree": true,
+      "eggFree": true,
+      "soyFree": true
     },
-    {
-      "id": 11,
-      "name": "Falafel House",
-      "cuisine": "Middle Eastern",
-      "allergySpecifications": {
-        "glutenFree": true,
-        "nutFree": false,
-        "dairyFree": true,
-        "eggFree": true,
-        "soyFree": true
-      },
-      "address": "888 Hummus Way, Flavor City",
-      "image": "/public/images/burger.jpg",
+    "address": "888 Hummus Way, Flavor City",
+    "image": "https://images.unsplash.com/photo-1655735199893-7661677955e0?q=80&w=2066&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "coordinates": {
       "latitude": -27.4642,
-      "longitude": 153.0300
+      "longitude": 153.03
+    }
+  },
+  {
+    "id": 12,
+    "name": "Chow Mein Express",
+    "cuisine": "Chinese",
+    "allergySpecifications": {
+      "glutenFree": false,
+      "nutFree": true,
+      "dairyFree": true,
+      "eggFree": false,
+      "soyFree": false
     },
-    {
-      "id": 12,
-      "name": "Chow Mein Express",
-      "cuisine": "Chinese",
-      "allergySpecifications": {
-        "glutenFree": false,
-        "nutFree": true,
-        "dairyFree": true,
-        "eggFree": false,
-        "soyFree": false
-      },
-      "address": "999 Dragon St, Chinatown",
-      "image": "/public/images/burger.jpg",
+    "address": "999 Dragon St, Chinatown",
+    "image": "https://images.unsplash.com/photo-1605291569092-5cbe5ded7b60?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "coordinates": {
       "latitude": -27.4744,
       "longitude": 153.0186
     }
-  ]
-  
+  }
+]

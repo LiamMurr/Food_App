@@ -15,16 +15,7 @@ async function loadRestaurants() {
       restaurantCard.innerHTML = `
         <img src="${restaurant.image}" alt="${restaurant.name}">
         <h2>${restaurant.name}</h2>
-        <p><strong>Cuisine:</strong> ${restaurant.cuisine}</p>
-        <div class="allergy-specs">
-          <strong>Allergy Specifications:</strong>
-          <span class="spec">Gluten-Free: ${restaurant.allergySpecifications.glutenFree ? 'Yes' : 'No'}</span>
-          <span class="spec">Nut-Free: ${restaurant.allergySpecifications.nutFree ? 'Yes' : 'No'}</span>
-          <span class="spec">Dairy-Free: ${restaurant.allergySpecifications.dairyFree ? 'Yes' : 'No'}</span>
-          <span class="spec">Egg-Free: ${restaurant.allergySpecifications.eggFree ? 'Yes' : 'No'}</span>
-          <span class="spec">Soy-Free: ${restaurant.allergySpecifications.soyFree ? 'Yes' : 'No'}</span>
-        </div>
-        <p class="address"><strong>Address:</strong> ${restaurant.address}</p>
+        <p>${restaurant.cuisine}</p>
       `;
       
       // Append the new card to the container
@@ -40,13 +31,13 @@ window.onload = loadRestaurants;
 
 
 
-// const menu = document.querySelector("#mobile-menu");
-// const menuLinks = document.querySelector(".navbar__menu");
+const menu = document.querySelector("#mobile-menu");
+const menuLinks = document.querySelector(".navbar__menu");
 
-// menu.addEventListener("click", function () {
-//   menu.classList.toggle("is-active");
-//   menuLinks.classList.toggle("active");
-// });
+menu.addEventListener("click", function () {
+  menu.classList.toggle("is-active");
+  menuLinks.classList.toggle("active");
+});
 
 // // Initialize and add the map
 // let map;
