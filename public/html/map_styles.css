@@ -241,7 +241,7 @@ body {
   display: flex;
   align-items: center;
   position: relative;
-  overflow: hidden; /* Hide content overflow */
+  overflow: hidden; 
   width: 95%;
   margin: auto;
   height: auto;
@@ -250,9 +250,9 @@ body {
 /* Container for restaurant cards */
 .restaurants-container {
   display: flex;
-  flex-wrap: nowrap; /* Single row */
-  gap: 20px; /* Space between cards */
-  transition: transform 0.3s ease-in-out; /* Smooth sliding */
+  flex-wrap: nowrap; 
+  gap: 20px; 
+  transition: transform 0.3s ease-in-out; 
   padding: 2rem 0;
   will-change: transform;
 }
@@ -261,12 +261,12 @@ body {
 .restaurant-card {
   flex: 0 0 auto;
   overflow: hidden;
-  width: 300px; /* Fixed width for each card */
+  width: 300px; 
   transition: transform 0.3s ease-in-out;
 }
 
 .restaurant-card:hover {
-  transform: scale(1.05); /* Slight zoom on hover */
+  transform: scale(1.05);
 }
 
 /* Card image */
@@ -304,7 +304,6 @@ body {
 
 /* Navigation buttons */
 .prev-btn, .next-btn {
-  /* position: absolute; */
   cursor: pointer;
   z-index: 1;
   transform: translateY(-50%);

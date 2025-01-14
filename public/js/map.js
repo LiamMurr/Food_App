@@ -1,14 +1,13 @@
 async function loadRestaurants() {
   try {
-    const response = await fetch('/public/js/restaurants.json');
+    const response = await fetch("/public/js/restaurants.json");
     const restaurants = await response.json();
 
-    const container = document.querySelector('.restaurants-container');
+    const container = document.querySelector(".restaurants-container");
 
-
-    restaurants.forEach(restaurant => {
-      const restaurantCard = document.createElement('div');
-      restaurantCard.classList.add('restaurant-card');
+    restaurants.forEach((restaurant) => {
+      const restaurantCard = document.createElement("div");
+      restaurantCard.classList.add("restaurant-card");
 
       restaurantCard.innerHTML = `
         <img src="${restaurant.image}" alt="${restaurant.name}">
@@ -20,24 +19,24 @@ async function loadRestaurants() {
       container.appendChild(restaurantCard);
     });
   } catch (error) {
-    console.error('Error loading the restaurant data:', error);
+    console.error("Error loading the restaurant data:", error);
   }
 }
 
 function setupScrolling() {
-  const prevBtn = document.querySelector('.prev-btn');
-  const nextBtn = document.querySelector('.next-btn');
-  const container = document.querySelector('.restaurants-container');
+  const prevBtn = document.querySelector(".prev-btn");
+  const nextBtn = document.querySelector(".next-btn");
+  const container = document.querySelector(".restaurants-container");
 
   let scrollPosition = 0;
   const cardWidth = 320;
 
-  nextBtn.addEventListener('click', () => {
+  nextBtn.addEventListener("click", () => {
     scrollPosition += cardWidth;
     container.style.transform = `translateX(-${scrollPosition}px)`;
   });
 
-  prevBtn.addEventListener('click', () => {
+  prevBtn.addEventListener("click", () => {
     scrollPosition -= cardWidth;
     if (scrollPosition < 0) scrollPosition = 0;
     container.style.transform = `translateX(-${scrollPosition}px)`;
@@ -49,14 +48,6 @@ window.onload = () => {
     setupScrolling();
   });
 };
-
-
-
-
-
-
-
-
 
 const menu = document.querySelector("#mobile-menu");
 const menuLinks = document.querySelector(".navbar__menu");
