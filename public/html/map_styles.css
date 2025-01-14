@@ -1,8 +1,8 @@
 :root {
-  --color1: #f9f5f2; /* Background or sections */
-  --color2: #e7f6fd; /* Buttons, headers, hover effects */
-  --color3: #ffe5e0; /* Highlights, borders, secondary buttons */
-  --color4: #ff0844; /* Accent color for toggle button */
+  --color1: #f9f5f2; /* Backgrounds */
+  --color2: #e7f6fd; 
+  --color3: #ffe5e0; 
+  --color4: #ff0844; /* Color for button or hover */
   --gradient1: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
 }
 
@@ -449,7 +449,7 @@ margin: 16px;
 }
 
 .footer__link--items a:hover {
-  color: var(--color2);
+  color: var(--color4);
   transition: 0.3s ease-out;
 }
 
