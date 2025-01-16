@@ -29,15 +29,15 @@ function setupScrolling() {
   const container = document.querySelector(".restaurants-container");
 
   let scrollPosition = 0;
-  const cardWidth = 320;
+  const scrollWidth = 1420;
 
   nextBtn.addEventListener("click", () => {
-    scrollPosition += cardWidth;
+    scrollPosition += scrollWidth;
     container.style.transform = `translateX(-${scrollPosition}px)`;
   });
 
   prevBtn.addEventListener("click", () => {
-    scrollPosition -= cardWidth;
+    scrollPosition -= scrollWidth;
     if (scrollPosition < 0) scrollPosition = 0;
     container.style.transform = `translateX(-${scrollPosition}px)`;
   });
@@ -57,93 +57,80 @@ menu.addEventListener("click", function () {
   menuLinks.classList.toggle("active");
 });
 
-// // Initialize and add the map
-// let map;
+// Initialize and add the map
+let map;
+let markers = []; // Array to track markers on the map
 
-// async function initMap() {
-//   const map = new google.maps.Map(document.getElementById("map"), {
-//     center: { lat: -34.397, lng: 150.644 }, // Set the desired center of the map
-//     zoom: 8, // Set the zoom level
-//   });
-// }
+// Restaurant data
+const restaurants = [
+  {
+    name: "Gluten-Free Cafe",
+    lat: -34.397,
+    lng: 150.644,
+    diet: ["gluten-free"],
+  },
+  { name: "Vegan Diner", lat: -34.4, lng: 150.65, diet: ["vegan"] },
+  {
+    name: "Low Sugar Bakery",
+    lat: -34.39,
+    lng: 150.64,
+    diet: ["low-sugar", "gluten-free"],
+  },
+];
 
-// initMap();
+async function initMap() {
+  // Initialize the map
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 8,
+  });
 
-// 'use strict';
+  // Add initial markers (all restaurants)
+  addMarkers(restaurants);
+}
 
-// // Mobile menu functionality
-// const menu = document.querySelector("#mobile-menu");
-// const menuLinks = document.querySelector(".navbar__menu");
+// Function to add markers to the map
+function addMarkers(data) {
+  // Clear existing markers
+  markers.forEach((marker) => marker.setMap(null));
+  markers = [];
 
-// menu.addEventListener("click", function () {
-//   menu.classList.toggle("is-active");
-//   menuLinks.classList.toggle("active");
-// });
+  // Add new markers based on filtered data
+  data.forEach((restaurant) => {
+    const marker = new google.maps.Marker({
+      position: { lat: restaurant.lat, lng: restaurant.lng },
+      map: map,
+      title: restaurant.name,
+    });
 
-// // Initialize and add the map
-// let map;
-// let markers = []; // Array to track markers on the map
+    // Optional: Add an info window
+    const infoWindow = new google.maps.InfoWindow({
+      content: `<h3>${restaurant.name}</h3>`,
+    });
 
-// // Restaurant data
-// const restaurants = [
-//   { name: "Gluten-Free Cafe", lat: -34.397, lng: 150.644, diet: ["gluten-free"] },
-//   { name: "Vegan Diner", lat: -34.400, lng: 150.650, diet: ["vegan"] },
-//   { name: "Low Sugar Bakery", lat: -34.390, lng: 150.640, diet: ["low-sugar", "gluten-free"] },
-// ];
+    marker.addListener("click", () => {
+      infoWindow.open(map, marker);
+    });
 
-// async function initMap() {
-//   // Initialize the map
-//   map = new google.maps.Map(document.getElementById("map"), {
-//     center: { lat: -34.397, lng: 150.644 },
-//     zoom: 8,
-//   });
+    markers.push(marker);
+  });
+}
 
-//   // Add initial markers (all restaurants)
-//   addMarkers(restaurants);
-// }
+// Event listener for checkboxes
+document.getElementById("filter-form").addEventListener("change", () => {
+  // Get selected filters
+  const selectedFilters = Array.from(
+    document.querySelectorAll('input[name="diet"]:checked')
+  ).map((input) => input.value);
 
-// // Function to add markers to the map
-// function addMarkers(data) {
-//   // Clear existing markers
-//   markers.forEach((marker) => marker.setMap(null));
-//   markers = [];
+  // Filter restaurants based on selected filters
+  const filteredRestaurants = restaurants.filter((restaurant) =>
+    selectedFilters.every((filter) => restaurant.diet.includes(filter))
+  );
 
-//   // Add new markers based on filtered data
-//   data.forEach((restaurant) => {
-//     const marker = new google.maps.Marker({
-//       position: { lat: restaurant.lat, lng: restaurant.lng },
-//       map: map,
-//       title: restaurant.name,
-//     });
+  // Update markers on the map
+  addMarkers(filteredRestaurants);
+});
 
-//     // Optional: Add an info window
-//     const infoWindow = new google.maps.InfoWindow({
-//       content: `<h3>${restaurant.name}</h3>`,
-//     });
-
-//     marker.addListener("click", () => {
-//       infoWindow.open(map, marker);
-//     });
-
-//     markers.push(marker);
-//   });
-// }
-
-// // Event listener for checkboxes
-// document.getElementById("filter-form").addEventListener("change", () => {
-//   // Get selected filters
-//   const selectedFilters = Array.from(
-//     document.querySelectorAll('input[name="diet"]:checked')
-//   ).map((input) => input.value);
-
-//   // Filter restaurants based on selected filters
-//   const filteredRestaurants = restaurants.filter((restaurant) =>
-//     selectedFilters.every((filter) => restaurant.diet.includes(filter))
-//   );
-
-//   // Update markers on the map
-//   addMarkers(filteredRestaurants);
-// });
-
-// // Call the initMap function to load the map
-// initMap();
+// Call the initMap function to load the map
+initMap();
