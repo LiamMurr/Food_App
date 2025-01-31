@@ -2,7 +2,7 @@
 node_modules/
 
 # Operating system files
-.DS_Store
+.DS_Store/
 
 # VS code settings
 .vscode/
