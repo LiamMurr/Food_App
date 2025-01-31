@@ -1,0 +1,163 @@
+[
+    {
+      "name": "Green Leaf Bistro",
+      "cuisine": "Vegetarian",
+      "location": "123 Garden St, Christchurch",
+      "coordinates": { "lat": -43.5321, "lng": 172.6362 },
+      "allergy_friendly": ["gluten-free", "dairy-free", "nut-free", "vegan"],
+      "price": "$$"
+    },
+    {
+      "name": "Ocean Breeze Cafe",
+      "cuisine": "Seafood",
+      "location": "456 Coastal Rd, Christchurch",
+      "coordinates": { "lat": -43.5402, "lng": 172.6543 },
+      "allergy_friendly": ["gluten-free", "egg-free"],
+      "price": "$$$"
+    },
+    {
+      "name": "Purely Vegan Diner",
+      "cuisine": "Vegan",
+      "location": "789 Plant St, Christchurch",
+      "coordinates": { "lat": -43.5256, "lng": 172.6417 },
+      "allergy_friendly": ["gluten-free", "dairy-free", "nut-free", "egg-free"],
+      "price": "$"
+    },
+    {
+      "name": "Spice Haven",
+      "cuisine": "Indian",
+      "location": "101 Curry Rd, Christchurch",
+      "coordinates": { "lat": -43.5278, "lng": 172.6489 },
+      "allergy_friendly": ["gluten-free", "nut-free"],
+      "price": "$$"
+    },
+    {
+      "name": "Sushi Zen",
+      "cuisine": "Japanese",
+      "location": "567 Sushi Ln, Christchurch",
+      "coordinates": { "lat": -43.5355, "lng": 172.6333 },
+      "allergy_friendly": ["gluten-free", "egg-free", "dairy-free"],
+      "price": "$$"
+    },
+    {
+      "name": "Harvest Bowl",
+      "cuisine": "Healthy",
+      "location": "222 Organic St, Christchurch",
+      "coordinates": { "lat": -43.5234, "lng": 172.6467 },
+      "allergy_friendly": ["gluten-free", "dairy-free", "vegan"],
+      "price": "$"
+    },
+    {
+      "name": "Pasta Bella",
+      "cuisine": "Italian",
+      "location": "678 Tuscany Blvd, Christchurch",
+      "coordinates": { "lat": -43.5299, "lng": 172.6512 },
+      "allergy_friendly": ["gluten-free", "nut-free"],
+      "price": "$$"
+    },
+    {
+      "name": "The Grill House",
+      "cuisine": "Steakhouse",
+      "location": "345 Flame Ave, Christchurch",
+      "coordinates": { "lat": -43.5333, "lng": 172.6399 },
+      "allergy_friendly": ["gluten-free"],
+      "price": "$$$"
+    },
+    {
+      "name": "Baker’s Delight",
+      "cuisine": "Bakery",
+      "location": "111 Bread St, Christchurch",
+      "coordinates": { "lat": -43.5205, "lng": 172.6358 },
+      "allergy_friendly": ["gluten-free", "egg-free"],
+      "price": "$"
+    },
+    {
+      "name": "Taste of Thailand",
+      "cuisine": "Thai",
+      "location": "404 Bangkok St, Christchurch",
+      "coordinates": { "lat": -43.5312, "lng": 172.6447 },
+      "allergy_friendly": ["gluten-free", "dairy-free"],
+      "price": "$$"
+    },
+    {
+      "name": "Mediterranean Feast",
+      "cuisine": "Mediterranean",
+      "location": "909 Olive Ave, Christchurch",
+      "coordinates": { "lat": -43.5374, "lng": 172.6561 },
+      "allergy_friendly": ["gluten-free", "nut-free", "vegan"],
+      "price": "$$$"
+    },
+    {
+      "name": "Burger Barn",
+      "cuisine": "American",
+      "location": "777 Burger Dr, Christchurch",
+      "coordinates": { "lat": -43.5228, "lng": 172.6423 },
+      "allergy_friendly": ["gluten-free"],
+      "price": "$$"
+    },
+    {
+      "name": "The Green Spoon",
+      "cuisine": "Vegan",
+      "location": "321 Eco St, Christchurch",
+      "coordinates": { "lat": -43.5266, "lng": 172.6377 },
+      "allergy_friendly": ["gluten-free", "dairy-free", "nut-free", "egg-free"],
+      "price": "$$"
+    },
+    {
+      "name": "MexiCasa",
+      "cuisine": "Mexican",
+      "location": "505 Taco Rd, Christchurch",
+      "coordinates": { "lat": -43.5390, "lng": 172.6451 },
+      "allergy_friendly": ["gluten-free", "dairy-free"],
+      "price": "$$"
+    },
+    {
+      "name": "Soup & Salad Bar",
+      "cuisine": "Healthy",
+      "location": "858 Fresh Ln, Christchurch",
+      "coordinates": { "lat": -43.5247, "lng": 172.6533 },
+      "allergy_friendly": ["gluten-free", "vegan"],
+      "price": "$"
+    },
+    {
+      "name": "Cozy Cottage Cafe",
+      "cuisine": "Cafe",
+      "location": "333 Latte Rd, Christchurch",
+      "coordinates": { "lat": -43.5293, "lng": 172.6559 },
+      "allergy_friendly": ["gluten-free", "dairy-free"],
+      "price": "$"
+    },
+    {
+      "name": "Middle Eastern Magic",
+      "cuisine": "Middle Eastern",
+      "location": "777 Shawarma St, Christchurch",
+      "coordinates": { "lat": -43.5318, "lng": 172.6572 },
+      "allergy_friendly": ["gluten-free", "dairy-free", "nut-free"],
+      "price": "$$"
+    },
+    {
+      "name": "Korean BBQ House",
+      "cuisine": "Korean",
+      "location": "666 Seoul Ave, Christchurch",
+      "coordinates": { "lat": -43.5281, "lng": 172.6478 },
+      "allergy_friendly": ["gluten-free"],
+      "price": "$$$"
+    },
+    {
+      "name": "Rustic Farmhouse Kitchen",
+      "cuisine": "Farm-to-Table",
+      "location": "222 Country Rd, Christchurch",
+      "coordinates": { "lat": -43.5231, "lng": 172.6522 },
+      "allergy_friendly": ["gluten-free", "dairy-free", "nut-free"],
+      "price": "$$"
+    },
+    {
+      "name": "Pho & Noodle Express",
+      "cuisine": "Vietnamese",
+      "location": "909 Hanoi St, Christchurch",
+      "coordinates": { "lat": -43.5362, "lng": 172.6438 },
+      "allergy_friendly": ["gluten-free", "dairy-free"],
+      "price": "$$"
+    }
+  ]
+  
