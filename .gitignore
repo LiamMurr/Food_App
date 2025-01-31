@@ -1,0 +1,8 @@
+# Ignore node_modules folder
+node_modules/
+
+# Operating system files
+.DS_Store
+
+# VS code settings
+.vscode/
