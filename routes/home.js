@@ -1,6 +1,9 @@
+const express = require("express");
 const router = express.Router();
 
 
-router.get('/', (res, req) => {
-    res.render('SERVING!!!')
-})
+router.get('/', (req, res) => {
+    res.render('restaurants/index')
+});
+
+module.exports = router;

@@ -1,7 +1,8 @@
-const express = require('epxress');
+const express = require('express');
 const path = require("path");
 const mongoose = require("mongoose");
-const engine = require('ejs-mate')
+const ejsMate = require('ejs-mate');
+
 
 const homeRoutes = require('./routes/home');
 
@@ -23,6 +24,23 @@ app.set("views", path.join(__dirname, "views"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 
+app.use('/', homeRoutes);
+
+app.use((err, req, res, next) => {
+    const { statusCode = 500 } = err;
+    
+    if (err.name === "ValidationError") {
+        console.log(err.name);
+        return res.status(statusCode).render("error", { err });
+    }
+    
+    if (err.name === "CastError") {
+        console.log(err.name);
+        return res.status(statusCode).render("error", { err });
+    }
+    
+    res.status(statusCode).render("error", { err });
+});
 
 app.listen(3000, () => {
     console.log('Serving on port 3000');
