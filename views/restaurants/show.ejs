@@ -1,0 +1,52 @@
+<% layout('layouts/boilerplate') %>
+<!-- Map and Filter Section-->
+
+    <!-- have map as another option from this page, have lists of restaurants like uber eats -->
+    <!-- Change to allow only 4 items per slide so and fit to page each slide -->
+    <div class="listings">
+        <div class="btn-holder">
+          <button class="prev-btn">←</button>
+          <button class="next-btn">→</button>
+        </div>
+        <div class="slider">
+          <div class="restaurants-container">
+            <!-- cards will be added here -->
+          </div>
+        </div>
+      </div>
+  
+      <main class="main__container">
+        <div id="map"></div>
+        <div class="filter">
+          <h2>Filter by allergy</h2>
+          <form id="filter-form">
+            <label>
+              <input type="checkbox" name="diet" value="gluten-free" />
+              Gluten-Free
+            </label>
+            <label>
+              <input type="checkbox" name="diet" value="dairy-free" />
+              Dairy-Free
+            </label>
+            <label>
+              <input type="checkbox" name="diet" value="low-sugar" />
+              Low Sugar
+            </label>
+            <label>
+              <input type="checkbox" name="diet" value="nut-free" />
+              Nut-Free
+            </label>
+            <label>
+              <input type="checkbox" name="diet" value="vegan" />
+              Vegan
+            </label>
+            <label>
+              <input type="checkbox" name="diet" value="vegan" />
+              No Seafood
+            </label>
+            <label>
+              <input type="checkbox" name="diet" value="vegan" />
+              Gluten-Free
+            </label>
+          </form>
+        </div>
