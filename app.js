@@ -25,7 +25,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use('/', homeRoutes);
-app.use('/', restaurantsRoutes)
+// app.use('/', restaurantsRoutes) Second router for restaurant page?
 
 app.use((err, req, res, next) => {
     const { statusCode = 500 } = err;

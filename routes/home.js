@@ -7,7 +7,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/restaurants', (req, res) => {
-    res.send('TEST')
+    res.render('restaurants/show')
 });
 
 
