@@ -1,0 +1,23 @@
+:root {
+  --color1: #f9f5f2; /* Background or sections */
+  --color2: #e7f6fd; /* Buttons, headers, hover effects */
+  --color3: #ffe5e0; /* Highlights, borders, secondary buttons */
+  --color4: #ff0844; /* Accent color for toggle button */
+  --gradient1: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--color1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
