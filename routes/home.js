@@ -3,7 +3,8 @@ const router = express.Router();
 
 
 router.get('/', (req, res) => {
-    res.render('restaurants/index')
+    res.render('restaurants/home')
 });
+
 
 module.exports = router;
