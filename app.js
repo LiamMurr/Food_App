@@ -6,8 +6,7 @@ const ejsMate = require('ejs-mate');
 
 
 const homeRoutes = require('./routes/home');
-
-
+const restaurantsRoutes = require('./routes/restaurants')
 
 mongoose.connect('mongodb://127.0.0.1:27017/food-finder');
 const db = mongoose.connection;
@@ -26,6 +25,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use('/', homeRoutes);
+app.use('/', restaurantsRoutes)
 
 app.use((err, req, res, next) => {
     const { statusCode = 500 } = err;

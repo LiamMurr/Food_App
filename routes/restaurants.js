@@ -1,9 +1,14 @@
+// Find out if I should have restaurants in a different router?
+// app.use('/this is where you select the root route name')
+
+
+
 const express = require("express");
 const router = express.Router();
 
 
-router.get('/show', (req, res) => {
-    res.render('restaurants/index')
+router.get('/', (req, res) => {
+    res.send('TEST')
 });
 
 module.exports = router;
