@@ -1,79 +1,6 @@
 "use strict";
 
-let map;
-let markers = [];
 let allRestaurants = []; // Global variable to store all restaurants
-
-// Google Maps Initialization
-function initMap() {
-  const defaultLocation = { lat: -27.4698, lng: 153.0251 };
-
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: defaultLocation,
-    zoom: 12,
-    mapTypeControl: false,
-    streetViewControl: false,
-    fullscreenControl: false
-  });
-
-  // Initially hide the map
-  document.getElementById('map').style.display = 'none';
-}
-
-// Add Markers for Restaurants
-function addRestaurantMarkers(restaurants) {
-  if (!window.google || !window.google.maps) return;
-
-  // Clear existing markers
-  markers.forEach((marker) => marker.setMap(null));
-  markers = [];
-
-  restaurants.forEach((restaurant) => {
-    if (restaurant.coordinates) {
-      const marker = new google.maps.Marker({
-        position: {
-          lat: restaurant.coordinates.latitude,
-          lng: restaurant.coordinates.longitude,
-        },
-        map: map,
-        title: restaurant.name,
-      });
-
-      const infoWindow = new google.maps.InfoWindow({
-        content: `
-          <div class="map-info-window">
-            <h3>${restaurant.name}</h3>
-            <p>${restaurant.cuisine} | ${restaurant.priceRange}</p>
-            <p>Address: ${restaurant.address}</p>
-            <div class="allergy-info">
-              <strong>Allergy Specifications:</strong>
-              <ul>
-                ${Object.entries(restaurant.allergySpecifications)
-                  .map(([key, value]) =>
-                    `<li>${key.replace(/([A-Z])/g, " $1").replace(/^./, (str) => str.toUpperCase())}: 
-                    ${value ? "Yes" : "No"}</li>`
-                  )
-                  .join("")}
-              </ul>
-            </div>
-          </div>
-        `,
-      });
-
-      marker.addListener("click", () => {
-        infoWindow.open(map, marker);
-      });
-
-      markers.push(marker);
-    }
-  });
-
-  if (markers.length > 0) {
-    const bounds = new google.maps.LatLngBounds();
-    markers.forEach((marker) => bounds.extend(marker.getPosition()));
-    map.fitBounds(bounds);
-  }
-}
 
 // Restaurant Loading Function
 async function loadRestaurants() {
@@ -87,10 +14,6 @@ async function loadRestaurants() {
     const restaurants = await response.json();
     allRestaurants = restaurants;
     updateRestaurantDisplay(restaurants);
-
-    if (window.google && window.google.maps) {
-      addRestaurantMarkers(restaurants);
-    }
 
     return restaurants;
   } catch (error) {
@@ -131,9 +54,6 @@ function setupAllergyFilter() {
     });
 
     updateRestaurantDisplay(filteredRestaurants);
-    if (window.google && window.google.maps) {
-      addRestaurantMarkers(filteredRestaurants);
-    }
   });
 }
 
@@ -183,25 +103,10 @@ function setupScrolling() {
   });
 }
 
-// Map Toggle Function
-function setupMapToggle() {
-  const mapToggleBtn = document.getElementById("map-toggle-btn");
-  const mapContainer = document.getElementById("map");
-
-  if (!mapToggleBtn || !mapContainer) return;
-
-  mapToggleBtn.addEventListener("click", () => {
-    mapContainer.style.display = mapContainer.style.display === "none" ? "block" : "none";
-    mapToggleBtn.textContent = mapContainer.style.display === "none" ? "Show Map" : "Hide Map";
-  });
-}
-
 // Initialize Everything
-
 document.addEventListener('DOMContentLoaded', () => {
   loadRestaurants().then(() => {
     setupAllergyFilter();
     setupScrolling();
-    setupMapToggle();
   }).catch(error => console.error("Initialization failed:", error));
 });
