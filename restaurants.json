@@ -1,0 +1,173 @@
+[
+  {
+    "name": "Green Leaf Bistro",
+    "cuisine": "Vegetarian",
+    "location": "123 Garden St, Christchurch",
+    "coordinates": { "lat": -43.5321, "lng": 172.6362 },
+    "allergy_friendly": ["gluten-free", "dairy-free", "nut-free", "vegan"],
+    "price": "$$",
+    "image": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?q=80&w=1968&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Ocean Breeze Cafe",
+    "cuisine": "Seafood",
+    "location": "456 Coastal Rd, Christchurch",
+    "coordinates": { "lat": -43.5402, "lng": 172.6543 },
+    "allergy_friendly": ["gluten-free", "egg-free"],
+    "price": "$$$",
+    "image": "https://plus.unsplash.com/premium_photo-1707935175109-ba307d98bfe2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Purely Vegan Diner",
+    "cuisine": "Vegan",
+    "location": "789 Plant St, Christchurch",
+    "coordinates": { "lat": -43.5256, "lng": 172.6417 },
+    "allergy_friendly": ["gluten-free", "dairy-free", "nut-free", "egg-free"],
+    "price": "$",
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?q=80&w=1968&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Spice Haven",
+    "cuisine": "Indian",
+    "location": "101 Curry Rd, Christchurch",
+    "coordinates": { "lat": -43.5278, "lng": 172.6489 },
+    "allergy_friendly": ["gluten-free", "nut-free"],
+    "price": "$$",
+    "image": "https://images.unsplash.com/photo-1625242661157-e9e5708ffe5e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Sushi Zen",
+    "cuisine": "Japanese",
+    "location": "567 Sushi Ln, Christchurch",
+    "coordinates": { "lat": -43.5355, "lng": 172.6333 },
+    "allergy_friendly": ["gluten-free", "egg-free", "dairy-free"],
+    "price": "$$",
+    "image": "https://plus.unsplash.com/premium_photo-1668146927669-f2edf6e86f6f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Harvest Bowl",
+    "cuisine": "Healthy",
+    "location": "222 Organic St, Christchurch",
+    "coordinates": { "lat": -43.5234, "lng": 172.6467 },
+    "allergy_friendly": ["gluten-free", "dairy-free", "vegan"],
+    "price": "$",
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?q=80&w=1968&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Pasta Bella",
+    "cuisine": "Italian",
+    "location": "678 Tuscany Blvd, Christchurch",
+    "coordinates": { "lat": -43.5299, "lng": 172.6512 },
+    "allergy_friendly": ["gluten-free", "nut-free"],
+    "price": "$$",
+    "image": "https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "The Grill House",
+    "cuisine": "Steakhouse",
+    "location": "345 Flame Ave, Christchurch",
+    "coordinates": { "lat": -43.5333, "lng": 172.6399 },
+    "allergy_friendly": ["gluten-free"],
+    "price": "$$$",
+    "image": "https://images.unsplash.com/photo-1683315446874-e6a629087ef8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Baker's Delight",
+    "cuisine": "Bakery",
+    "location": "111 Bread St, Christchurch",
+    "coordinates": { "lat": -43.5205, "lng": 172.6358 },
+    "allergy_friendly": ["gluten-free", "egg-free"],
+    "price": "$",
+    "image": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?q=80&w=1968&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Taste of Thailand",
+    "cuisine": "Thai",
+    "location": "404 Bangkok St, Christchurch",
+    "coordinates": { "lat": -43.5312, "lng": 172.6447 },
+    "allergy_friendly": ["gluten-free", "dairy-free"],
+    "price": "$$",
+    "image": "https://images.unsplash.com/photo-1591814468924-caf88d1232e1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Mediterranean Feast",
+    "cuisine": "Mediterranean",
+    "location": "909 Olive Ave, Christchurch",
+    "coordinates": { "lat": -43.5374, "lng": 172.6561 },
+    "allergy_friendly": ["gluten-free", "nut-free", "vegan"],
+    "price": "$$$",
+    "image": "https://images.unsplash.com/photo-1655735199893-7661677955e0?q=80&w=2066&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Burger Barn",
+    "cuisine": "American",
+    "location": "777 Burger Dr, Christchurch",
+    "coordinates": { "lat": -43.5228, "lng": 172.6423 },
+    "allergy_friendly": ["gluten-free"],
+    "price": "$$",
+    "image": "https://images.unsplash.com/photo-1428660386617-8d277e7deaf2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "The Green Spoon",
+    "cuisine": "Vegan",
+    "location": "321 Eco St, Christchurch",
+    "coordinates": { "lat": -43.5266, "lng": 172.6377 },
+    "allergy_friendly": ["gluten-free", "dairy-free", "nut-free", "egg-free"],
+    "price": "$$",
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?q=80&w=1968&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "MexiCasa",
+    "cuisine": "Mexican",
+    "location": "505 Taco Rd, Christchurch",
+    "coordinates": { "lat": -43.5390, "lng": 172.6451 },
+    "allergy_friendly": ["gluten-free", "dairy-free"],
+    "price": "$$",
+    "image": "https://images.unsplash.com/photo-1536184071535-78906f7172c2?q=80&w=2151&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Soup & Salad Bar",
+    "cuisine": "Healthy",
+    "location": "858 Fresh Ln, Christchurch",
+    "coordinates": { "lat": -43.5247, "lng": 172.6533 },
+    "allergy_friendly": ["gluten-free", "vegan"],
+    "price": "$",
+    "image": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?q=80&w=1968&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Cozy Cottage Cafe",
+    "cuisine": "Cafe",
+    "location": "333 Latte Rd, Christchurch",
+    "coordinates": { "lat": -43.5293, "lng": 172.6559 },
+    "allergy_friendly": ["gluten-free", "dairy-free"],
+    "price": "$",
+    "image": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?q=80&w=1968&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Middle Eastern Magic",
+    "cuisine": "Middle Eastern",
+    "location": "777 Shawarma St, Christchurch",
+    "coordinates": { "lat": -43.5318, "lng": 172.6572 },
+    "allergy_friendly": ["gluten-free", "dairy-free", "nut-free"],
+    "price": "$$",
+    "image": "https://images.unsplash.com/photo-1655735199893-7661677955e0?q=80&w=2066&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Korean BBQ House",
+    "cuisine": "Korean",
+    "location": "666 Seoul Ave, Christchurch",
+    "coordinates": { "lat": -43.5281, "lng": 172.6478 },
+    "allergy_friendly": ["gluten-free"],
+    "price": "$$$",
+    "image": "https://images.unsplash.com/photo-1591814468924-caf88d1232e1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Rustic Farmhouse Kitchen",
+    "cuisine": "Farm-to-Table",
+    "location": "222 Country Rd, Christchurch",
+    "coordinates": { "lat": -43.5231, "lng": 172.6522 },
+    "allergy_friendly": ["gluten-free", "dairy-free", "nut-free"],
+    "price": "$$",
+    "image": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?q=80&w=1968&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  }
+]

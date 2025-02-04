@@ -10,6 +10,7 @@ const restaurantSchema = new mongoose.Schema({
   },
   allergy_friendly: { type: [String], required: true },
   price: { type: String, enum: ["$", "$$", "$$$"], required: true },
+  image: { type: String, required: true },
 });
 
 const Restaurant = mongoose.model("Restaurant", restaurantSchema);

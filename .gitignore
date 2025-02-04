@@ -6,3 +6,7 @@ node_modules/
 
 # VS code settings
 .vscode/
+
+# API KEYS 
+# (GOOGLE)
+.env
