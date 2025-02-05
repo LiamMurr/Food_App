@@ -13,5 +13,11 @@ router.get('/restaurants', async (req, res) => {
     res.render('restaurants/show', { restaurants })
 });
 
+router.get('/restaurants/:id', async (req, res) => {
+    const { id } = req.params;
+    const restaurant = await Restaurants.findById(id);
+    res.render('restaurants/info', { restaurant })
+})
+
 
 module.exports = router;

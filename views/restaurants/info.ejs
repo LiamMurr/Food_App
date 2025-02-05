@@ -1,0 +1,41 @@
+<% layout('layouts/boilerplate') %>
+
+
+<div class="restaurant-container">
+    <!-- Hero Section with Image -->
+    <div class="hero-section">
+      <img src="<%= restaurant.image %>" alt="<%= restaurant.name %>" class="restaurant-hero-img">
+      <div class="hero-overlay">
+        <h1 class="restaurant-name"><%= restaurant.name %></h1>
+      </div>
+    </div>
+  
+    <!-- Main Info Section -->
+    <div class="main-content">
+      <!-- Quick Info Panel -->
+      <div class="quick-info-panel">
+        <div class="info-item">
+          <i class="fas fa-utensils"></i>
+          <p>Cuisine: <%= restaurant.cuisine %></p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Location: <%= restaurant.location %></p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-dollar-sign"></i>
+          <p>Price Range: <%= restaurant.price %></p>
+        </div>
+      </div>
+  
+      <!-- Dietary Restrictions Section -->
+      <div class="dietary-section">
+        <h2>Dietary Accommodations</h2>
+        <div class="allergy-tags">
+          <% restaurant.allergy_friendly.forEach(allergy => { %>
+            <span class="allergy-tag"><%= allergy %></span>
+          <% }) %>
+        </div>
+      </div>
+      </div>
+      </div>

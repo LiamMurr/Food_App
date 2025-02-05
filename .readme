@@ -1,3 +1,6 @@
 To add:
 
-Need to add (:id) each restaurant individually if clicked on.
+- Need to add (:id) each restaurant individually if clicked on.
+- Swap styles system to Tailwind.
+- Adjust diet page (add in other common diets and information around these)
+- Add in diet page to router
