@@ -1,94 +1,49 @@
-/* SLIDER / MAP */
+.restaurant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+  
+  .card {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 350px;
+    margin: 1rem;
+    background: white;
+    transition: transform 0.2s ease;
+}
 
-.btn-holder {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-right: 20px;
-    margin-top: 20px;
-    column-gap: 5px;
-  }
-  
-  .prev-btn,
-  .next-btn {
-    cursor: pointer;
-    z-index: 1;
-    border-radius: 50%;
-    border: none;
-    width: 30px;
-    height: 30px;
-  }
-  
-  .prev-btn:hover,
-  .next-btn:hover {
-    background-color: #ddd;
-  }
-  
-  /* Slider container */
-  .slider {
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    max-width: 1400px;
-    margin: auto;
-    height: auto;
-  }
-  
-  /* Container for restaurant cards */
-  .restaurants-container {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 20px;
-    transition: transform 0.8s ease-in-out;
-    padding: 2rem 0;
-    will-change: transform;
-  }
-  
-  /* Individual restaurant card */
-  .restaurant-card {
-    flex: 0 0 auto;
-    overflow: hidden;
-    width: 335px;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .restaurant-card:hover {
-    transform: scale(1.05);
-  }
-  
-  /* Card image */
-  .restaurant-card img {
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
     width: 100%;
-    height: 180px;
+    height: 200px;
     object-fit: cover;
-    overflow: hidden;
-  }
-  
-  /* Card title */
-  .restaurant-card h2 {
+}
+
+.restaurant-info {
+    padding: 1.5rem;
+}
+
+.restaurant-info h2 {
+    margin: 0 0 1rem 0;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.restaurant-info p {
+    margin: 0.5rem 0;
+    color: #666;
     font-size: 1rem;
-    font-style: normal;
-    color: #000;
-    margin: 5px 0;
-    font-family: "Kumbh Sans", serif;
-  }
-  
-  /* Card details */
-  .restaurant-card .one {
-    font-size: 0.8rem;
-    font-family: "Kumbh Sans", serif;
-    color: #6a6a6a;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 4px;
-  }
-  
-  .restaurant-card .distance {
-    margin-top: 2.5px;
-    font-size: 0.7rem;
-    font-family: "Kumbh Sans", serif;
-    color: #6a6a6a;
-  }
+    line-height: 1.4;
+}
+
+
   
   
   

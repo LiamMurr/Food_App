@@ -8,9 +8,9 @@ router.get('/', (req, res) => {
 });
 
 router.get('/restaurants', async (req, res) => {
-    const restaurant = await Restaurants.findOne({ name : "Middle Eastern Magic" });
-    console.log(restaurant.name);
-    res.render('restaurants/show', { restaurant })
+    const restaurants = await Restaurants.find({});
+    console.log(restaurants);
+    res.render('restaurants/show', { restaurants })
 });
 
 

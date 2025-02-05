@@ -1,9 +1,16 @@
 <% layout('layouts/boilerplate') %>
 
 
-
-
-<h1>Restaurant: <%= restaurant.name %></h1>
-<p>Cuisine: <%= restaurant.cuisine %></p>
-<p>Location: <%= restaurant.location %></p>
-<p>Price Range: <%= restaurant.price %></p>
+<div class="restaurant-grid">
+    <% for (const restaurant of restaurants) { %>
+        <div class="card">
+            <img src="<%= restaurant.image %>" alt="<%= restaurant.name %>">
+            <div class="restaurant-info">
+                <h2>Restaurant: <%= restaurant.name %></h2>
+                <p>Cuisine: <%= restaurant.cuisine %></p>
+                <p>Location: <%= restaurant.location %></p>
+                <p>Price Range: <%= restaurant.price %></p>
+            </div>
+        </div>
+    <% } %>
+</div>
