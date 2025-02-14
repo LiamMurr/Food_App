@@ -29,18 +29,20 @@
       </div>
   
       <!-- Dietary Restrictions Section -->
-      <div class="dietary-section">
-        <h2>Dietary Accommodations</h2>
-        <div class="allergy-tags">
-          <% restaurant.allergy_friendly.forEach(allergy => { %>
-            <span class="allergy-tag"><%= allergy %></span>
-          <% }) %>
+      <div class="dietary-container">
+        <div class="dietary-section">
+          <h2>Dietary Accommodations</h2>
+          <div class="allergy-tags">
+            <% restaurant.allergy_friendly.forEach(allergy => { %>
+              <span class="allergy-tag"><%= allergy %></span>
+            <% }) %>
+          </div>
         </div>
         <div class="map-container">
-        <h1>MAP CONTAINER</h1>
-        <div id="map" style="height: 300px; width: 400px"></div>
+          <div id="map"></div>
         </div>
       </div>
+      
       </div>
       </div>
 

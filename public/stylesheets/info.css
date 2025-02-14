@@ -60,11 +60,19 @@
     color: #666;
   }
   
+  .dietary-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  
   .dietary-section {
     background: white;
     padding: 1.5rem;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
   }
   
   .dietary-section h2 {
@@ -87,6 +95,19 @@
     color: #495057;
   }
   
+  .map-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #map {
+    height: 400px;
+    width: 500px;
+    border-radius: 10px;
+  }
+  
+  
   @media (max-width: 768px) {
     .hero-section {
       height: 300px;
@@ -98,5 +119,13 @@
   
     .quick-info-panel {
       grid-template-columns: 1fr;
+    }
+
+    .dietary-container {
+      flex-direction: column; 
+    }
+  
+    .map-container {
+      display: none;
     }
   }
