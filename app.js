@@ -3,6 +3,9 @@ const path = require("path")
 const mongoose = require("mongoose")
 const ejsMate = require("ejs-mate")
 
+require('dotenv').config();  // Load environment variables
+
+
 const homeRoutes = require("./routes/home")
 
 mongoose

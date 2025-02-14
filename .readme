@@ -4,4 +4,4 @@ To add:
 - Swap styles system to Tailwind.
 - Adjust diet page (add in other common diets and information around these)
 - Add in diet page to router
-- Add in-depth error handling
+- Add in-depth error handling using catchAsync file

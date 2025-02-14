@@ -18,6 +18,7 @@
   "homepage": "https://github.com/LiamMurr/Food_App#readme",
   "description": "",
   "dependencies": {
+    "@maptiler/sdk": "^3.0.1",
     "dotenv": "^16.4.7",
     "ejs": "^3.1.10",
     "ejs-mate": "^4.0.0",

@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
 
 router.get('/restaurants', async (req, res) => {
     const restaurants = await Restaurants.find({});
-    console.log(restaurants);
+    // console.log(restaurants);
     res.render('restaurants/show', { restaurants })
 });
 

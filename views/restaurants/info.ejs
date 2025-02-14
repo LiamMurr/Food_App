@@ -36,6 +36,19 @@
             <span class="allergy-tag"><%= allergy %></span>
           <% }) %>
         </div>
+        <div class="map-container">
+        <h1>MAP CONTAINER</h1>
+        <div id="map" style="height: 300px; width: 400px"></div>
+        </div>
       </div>
       </div>
       </div>
+
+
+      <script>
+        const maptilerApiKey = '<%- process.env.MAPTILER_API_KEY %>';
+        const restaurant = <%- JSON.stringify(restaurant) %>
+        console.log(restaurant.geometry.coordinates);
+      </script>
+      
+      <script src="/javascript/showMap.js"></script>
