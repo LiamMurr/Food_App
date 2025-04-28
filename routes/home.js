@@ -18,5 +18,8 @@ router.get('/restaurants/:id', async (req, res) => {
     res.render('restaurants/info', { restaurant })
 })
 
+router.get('/allergies', (req, res) => {
+    res.render('restaurants/allergies')
+})
 
 module.exports = router;

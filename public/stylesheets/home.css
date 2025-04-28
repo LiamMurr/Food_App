@@ -197,6 +197,7 @@
     background-size: cover;
     position: relative;
     color: #fff;
+    transition: transform 0.3s ease;
   }
   
   .services__card:nth-child(2) {
@@ -236,7 +237,7 @@
   
   .services__card:hover {
     transform: scale(1.075);
-    transition: 0.2s ease-in;
+    transition: 0.2s ease-in-out;
     cursor: pointer;
   }
   
