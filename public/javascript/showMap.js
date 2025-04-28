@@ -11,3 +11,4 @@ const map = new maptilersdk.Map({
     zoom: 10
 });
 
+

@@ -49,8 +49,9 @@
 
       <script>
         const maptilerApiKey = '<%- process.env.MAPTILER_API_KEY %>';
+        const googleApiKey = '<%- process.env.GOOGLE_API_KEY %>';
         const restaurant = <%- JSON.stringify(restaurant) %>
-        console.log(restaurant.geometry.coordinates);
+        // console.log(restaurant.geometry.coordinates);
       </script>
       
       <script src="/javascript/showMap.js"></script>
